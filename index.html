@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Elements Quick Start</title>
+    <title>Phone Hunter Website</title>
 
     <!-- Roboto font -->
     <link
@@ -50,31 +50,12 @@
                 <h2 class="py-8 text-4xl text-black">Search your phone</h2>
                 <div class="flex justify-center">
                     <input id="search-input-field" class="bg-gray-100 p-4 rounded-l-lg outline-none w-1/2" type="text" placeholder="Search your phone">
-                    <button class="rounded-lg bg-blue-500 px-6 py-3 text-xl -ml-4 text-white">Search</button>
+                    <button onclick="handleSearch()" class="rounded-lg bg-blue-500 px-6 py-3 text-xl -ml-4 text-white">Search</button>
                 </div>
             </div>
-
-
-
-
-
-            <div class="grid col-span-3 lg:grid-cols-3 md:grid-cols-1 gap-5 my-12">
-                    
-                    <!-- New Card  -->
-
-                    <div id="card-item" class="col-span-1 rounded-lg border-2 border-gray-200 text-center leading-snug pb-5 bg-white">
-                        <div class="bg-[#1111110D] py-10 px-20 m-5 rounded-lg">
-                            <img class="inline-block" src="images/prod1.png" alt="">
-                        </div>
-                        <div class="body px-12">
-                            <h3 id="card-item-title" class="text-2xl py-2 font-medium">Iphone 13 Pro Max</h3>
-                            <p>There are many variations of passages of available, but the majority have suffered</p>
-                            <p class="py-2 text-xl text-black font-bold">$999</p>
-                            <button class="rounded-lg bg-blue-500 px-4 py-2 text-xl -ml-4 text-white">Show Details</button>
-                        </div>
+                    <!-- Phone card  -->
+                    <div id="phone-container" class="grid lg:grid-cols-4 md:grid-cols-1 gap-5 my-12">
                     </div>
-
-                </div>
         </main>
        
         <!--Footer-->
@@ -281,5 +262,20 @@
     <!-- Tailwind Elements JavaScript -->
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+            fontFamily: {
+                sans: ["Roboto", "sans-serif"],
+                body: ["Roboto", "sans-serif"],
+                mono: ["ui-monospace", "monospace"],
+            },
+            },
+            corePlugins: {
+            preflight: false,
+            },
+        };
+    </script>
   </body>
 </html>
