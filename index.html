@@ -33,7 +33,7 @@
                 <div class="banner">
                     <div class="container mx-auto pt-12">
                         <div class="text-center py-30 leading-normal">
-                            <h1 class="text-8xl leading-normal text-black font-bold">Apple Iphone 13 Pro Max</h1>
+                            <h1 class="lg:text-8xl md:text-3xl text-2xl leading-normal text-black font-bold">Apple Iphone 13 Pro Max</h1>
                             <p class="py-4 text-xl">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
                             <button class="rounded-lg bg-blue-500 px-8 py-4 text-xl text-white mt-4">Buy Now</button>
                         </div>
@@ -49,13 +49,34 @@
             <div class="search-section text-center">
                 <h2 class="py-8 text-4xl text-black">Search your phone</h2>
                 <div class="flex justify-center">
-                    <input id="search-input-field" class="bg-gray-100 p-4 rounded-l-lg outline-none w-1/2" type="text" placeholder="Search your phone">
+                    <input id="search-input-field" class="bg-gray-100 p-4 rounded-l-lg outline-none w-1/2" type="text" placeholder="Search your phone...">
                     <button onclick="handleSearch()" class="rounded-lg bg-blue-500 px-6 py-3 text-xl -ml-4 text-white">Search</button>
                 </div>
             </div>
                     <!-- Phone card  -->
+                    <div id="loading-spinner" class="text-center py-8 hidden">
+                        <div
+                        class="inline-block bg-green-400 h-12 w-12 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]"
+                        role="status">
+                        <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                            >Loading...</span>
+                    </div>
+                    </div>
                     <div id="phone-container" class="grid lg:grid-cols-4 md:grid-cols-1 gap-5 my-12">
                     </div>
+                    <div id="show-all-container" class="text-center my-12 hidden">
+                        <button onclick="handleShowAll()" class="rounded-lg bg-blue-500 px-12 py-3 text-xl -ml-4 text-white">Show All</button>
+                    </div>
+
+                    <!-- Show Details Modal  -->
+                    <!-- Open the modal using ID.showModal() method -->
+                    <div id="">
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle rounded-lg p-4">
+                           
+                            </dialog>
+                    </div>
+                        
         </main>
        
         <!--Footer-->
