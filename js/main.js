@@ -87,7 +87,7 @@ const showPhoneDetails = (phone) => {
   const showDetailsContainer = document.getElementById('my_modal_5');
   showDetailsContainer.innerHTML=`
             <form method="dialog" class="modal-box">
-            <div class="bg-[#F3F8FF] py-4 px-32 m-5 rounded-lg">
+            <div class="bg-[#F3F8FF] py-4 px-20 m-5 rounded-lg text-center">
                  <img class="inline-block" src="${phone.image}" alt="">
               </div>
               <div class="px-6">
